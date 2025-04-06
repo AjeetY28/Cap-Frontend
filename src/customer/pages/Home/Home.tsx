@@ -35,30 +35,36 @@ const Home = () => {
 
 
           {homePage.homePageData?.grid &&  <section >
-                {/* <h1 className='text-lg lg:text-4xl font-bold text-[#00927c] pb-5 lg:pb-20 text-center'>SHOP FOR WEDDING</h1> */}
+                {/* <h1 className='text-lg lg:text-4xl font-bold text-[#292966] pb-5 lg:pb-20 text-center'>SHOP FOR WEDDING</h1> */}
                 <TopBrand />
             </section>}
         {homePage.homePageData?.deals &&    <section className='pt-10'>
-            <h1 className='text-center text-lg lg:text-4xl font-bold text-[#00927c] pb-5 lg:pb-10'>Today's Deals</h1>
+            <h1 className='text-center text-lg lg:text-4xl font-bold text-[black] pb-5 lg:pb-10'
+            style={{ fontFamily: "'Silkscreen', cursive" }}
+            >Today's Deals</h1>
                 <DealSlider/>
             </section>}
            {homePage.homePageData?.shopByCategories && <section className='flex flex-col justify-center items-center py-20 px-5 lg:px-20'>
-                <h1 className='text-lg lg:text-4xl font-bold text-[#00927c] pb-5 lg:pb-20'>SHOP BY CATEGORY</h1>
+                <h1 className='text-lg lg:text-4xl font-bold text-[black] pb-5 lg:pb-20'
+                style={{ fontFamily: "'Silkscreen', cursive" }}
+                >SHOP BY CATEGORY</h1>
                 <HomeCategory />
             </section>}
             <section className='lg:px-20 relative h-[200px] lg:h-[450px] object-cover'>
                 <img className='w-full h-full' src={"/seller_banner_image.jpg"} alt="" />
-                <div className='absolute top-1/2 left-4 lg:left-[15rem] transform  -translate-y-1/2 font-semibold lg:text-4xl space-y-3 '>
+                <div className='absolute top-1/2  top-1/2 left-[40%] transform  -translate-y-1/2 font-semibold lg:text-4xl space-y-3 '>
                     <h1 className=''>
                         Sell Your Product
                     </h1>
-                    <p className='text-lg md:text-2xl'>With <strong className='logo text-3xl md:text-5xl pl-2'>zosh bazzar</strong></p>
+                    <p className='text-lg md:text-2xl' >With <strong className='logo text-3xl md:text-5xl pl-2 text-[#292966]'>Ecommerce</strong></p>
 
                     <div className='pt-6 flex justify-center'>
                         <Button
                             onClick={becomeSellerClick}
                             startIcon={<StorefrontIcon />}
                             variant="contained"
+                            sx={{ backgroundColor: "#292966", color: "#fff", '&:hover': { backgroundColor: "#5c5c99" } }}
+              
                         >
                             Become Seller
                         </Button>

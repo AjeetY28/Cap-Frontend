@@ -54,7 +54,7 @@ const FilterSection = () => {
         <Button
         onClick={clearAllFilters}
           size="small"
-          className="text-teal-600 cursor-pointer font-semibold"
+          className="text-[#292966]  cursor-pointer font-bold"
         >
           clear all
         </Button>
@@ -96,7 +96,7 @@ const FilterSection = () => {
           <div>
             <button
               onClick={handleExpendBrand}
-              className="text-teal-600 cursor-pointer hover:text-teal-900 flex items-center"
+              className="text-[#292966]cursor-pointer hover:text-teal-900 flex items-center"
             >
               {expendBrand ? "hide" : `+ ${brands.length - 5} more`}
             </button>
@@ -110,9 +110,9 @@ const FilterSection = () => {
                 fontSize: "16px",
                 fontWeight: "bold",
                 pb: "14px",
-                color: teal[600],
+                color: "#292966",
               }}
-              className="text-2xl font-semibold"
+              className="text-2xl font-semibold "
               id="color"
             >
               Color
@@ -149,7 +149,7 @@ const FilterSection = () => {
           <div>
             <button
               onClick={handleExpendColor}
-              className="text-teal-600 cursor-pointer hover:text-teal-900 flex items-center"
+              className="text-[#292966]cursor-pointer hover:text-[#5c5c99] flex items-center"
             >
               {expendColor ? "hide" : `+ ${colors.length - 5} more`}
             </button>
@@ -164,7 +164,7 @@ const FilterSection = () => {
                 fontSize: "16px",
                 fontWeight: "bold",
                 pb: "14px",
-                color: teal[600],
+                color: "#292966",
               }}
               className="text-2xl font-semibold"
               id="price"
@@ -196,7 +196,7 @@ const FilterSection = () => {
                 fontSize: "16px",
                 fontWeight: "bold",
                 pb: "14px",
-                color: teal[600],
+                color: "#292966",
               }}
               className="text-2xl font-semibold"
               id="brand"

@@ -42,10 +42,11 @@ const UserDetails = () => {
           </div> */}
         </div>
         <div className="space-y-5">
-          {/* <Avatar
+          <Avatar
             sx={{ width: "10rem", height: "10rem" }}
-            src="https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_640.jpg"
-          /> */}
+            // src="https://cdn.pixabay.com/photo/2014/11/29/19/33/bald-eagle-550804_640.jpg"
+            src="https://res.cloudinary.com/dngjbc4qx/image/upload/v1743964751/boy_br9a7h.png"
+          />
           <div>
             <ProfileFildCard keys={"Name"} value={user.user?.fullName} />
             <Divider />

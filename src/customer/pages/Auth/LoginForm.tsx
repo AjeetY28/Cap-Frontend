@@ -113,7 +113,7 @@ const LoginForm = () => {
                                 Didn’t receive OTP?{" "}
                                 <span
                                     onClick={handleResendOTP}
-                                    className="text-teal-600 cursor-pointer hover:text-teal-800 font-semibold"
+                                    className="text-[#292966]cursor-pointer hover:text-[#292966] font-semibold"
                                 >
                                     Resend OTP
                                 </span>

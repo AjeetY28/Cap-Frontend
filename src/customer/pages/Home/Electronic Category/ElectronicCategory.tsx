@@ -8,7 +8,8 @@ const electronics = [
     section: "ELECTRIC_CATEGORIES",
     name: "Laptop",
     image:
-      "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/x/9/j/-original-imahyjzh7m2zsqdg.jpeg?q=70",
+      // "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/x/9/j/-original-imahyjzh7m2zsqdg.jpeg?q=70",
+      "https://res.cloudinary.com/dngjbc4qx/image/upload/v1743964079/Microsoft_tbbrha.jpg",
     
     categoryId:"laptops"
   },

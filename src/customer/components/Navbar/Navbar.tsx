@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <Box
       sx={{ zIndex: 2 }}
-      className="sticky top-0 left-0 right-0 bg-white blur-bg bg-opacity-80 "
+      className="sticky top-0 left-0 right-0 bg-[white] blur-bg bg-opacity-80 "
     >
       <div className="flex items-center justify-between px-5 lg:px-20 h-[70px] border-b">
         <div className="flex items-center gap-9">
@@ -67,7 +67,7 @@ const Navbar = () => {
             )}
             <h1
               onClick={() => navigate("/")}
-              className="logo cursor-pointer text-lg md:text-2xl  text-[#00927c]"
+              className="logo cursor-pointer text-lg md:text-2xl  text-[#292966]"
             >
               Ecommerce Virtual Try-On
             </h1>
@@ -76,7 +76,7 @@ const Navbar = () => {
           {isLarge && (
             <ul
               className="flex it
-          ems-center font-medium text-gray-800 "
+          ems-center font-medium text-[#292966] "
             >
               {mainCategory.map((item) => (
                 <li
@@ -88,7 +88,7 @@ const Navbar = () => {
                     setSelectedCategory(item.categoryId);
                     setShowSheet(true);
                   }}
-                  className="mainCategory hover:text-[#00927c] cursor-pointer hover:border-b-2 h-[70px] px-4 border-[#00927c] flex items-center"
+                  className="mainCategory hover:text-[#292966] cursor-pointer hover:border-b-2 h-[70px] px-4 border-[#292966] flex items-center"
                 >
                   {item.name}
                 </li>
@@ -98,8 +98,9 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-1 lg:gap-6 items-center">
-          <IconButton onClick={()=>navigate("/search-products")}>
-            <SearchIcon className="text-gray-700" sx={{ fontSize: 29 }} />
+          <IconButton onClick={()=>navigate("/search-products")}
+            sx={{ color: "#16415c" }}>
+            <SearchIcon className="text-[#292966]" sx={{ fontSize: 29 }} />
           </IconButton>
 
           {user.user ? (
@@ -109,16 +110,18 @@ const Navbar = () => {
             >
               <Avatar
                 sx={{ width: 29, height: 29 }}
-                src="https://cdn.pixabay.com/photo/2015/04/15/09/28/head-723540_640.jpg"
+                // src="https://cdn.pixabay.com/photo/2015/04/15/09/28/head-723540_640.jpg"
+                src="https://res.cloudinary.com/dngjbc4qx/image/upload/v1743964751/boy_br9a7h.png"
                 // src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwc0abe627/homepage/ShopByGender/Woman.jpg"
               />
-              <h1 className="font-semibold hidden lg:block">
+              <h1 className="font-semibold text-[#292966] hidden lg:block">
                 {user.user?.fullName?.split(" ")[0]}
               </h1>
             </Button>
           ) : (
             <Button
               variant="contained"
+              sx={{ backgroundColor: "#292966", color: "#fff", '&:hover': { backgroundColor: "#5c5c99" } }}
               startIcon={<AccountCircleIcon sx={{ fontSize: "12px" }} />}
               onClick={() => navigate("/login")}
             >
@@ -126,16 +129,16 @@ const Navbar = () => {
             </Button>
           )}
 
-          <IconButton onClick={()=>navigate("/wishlist")}>
+          <IconButton onClick={()=>navigate("/wishlist")} sx={{ color: "#292966" }}>
             <FavoriteBorder sx={{ fontSize: 29 }}
-                className="text-gray-700" />
+                className="text-[#292966]" />
           </IconButton>
 
-          <IconButton onClick={() => navigate("/cart")}>
+          <IconButton onClick={() => navigate("/cart")} sx={{ color: "#292966" }}>
             <Badge badgeContent={cart.cart?.cartItems.length} color="primary">
               <AddShoppingCartIcon
                 sx={{ fontSize: 29 }}
-                className="text-gray-700"
+                className="text-[#292966]"
               />
             </Badge>
           </IconButton>
@@ -145,6 +148,15 @@ const Navbar = () => {
               onClick={becomeSellerClick}
               startIcon={<StorefrontIcon />}
               variant="outlined"
+              sx={{
+                color: "#292966", // Text color
+                borderColor: "#292966", // Border color
+                '&:hover': {
+                  backgroundColor: "#292966", // Background color on hover
+                  color: "#fff", // Text color on hover
+                  borderColor: "#292966", // Border color on hover
+                },
+              }}
             >
               Become Seller
             </Button>

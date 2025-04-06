@@ -56,14 +56,14 @@ const navigate=useNavigate()
                 {categoryTwo[selectedCategory]?.map((item: any,index) => 
                 <div  key={item.name} className={`p-8 lg:w-[20%] ${index%2==0?"bg-slate-50":"bg-white"}`}>
 
-                    <p className='text-[#00927c] mb-5 font-semibold'>{item.name}</p>
+                    <p className='text-[#292966] mb-5 font-semibold'>{item.name}</p>
 
                     <ul className='space-y-3'>
                         {childCategory(categoryThree[selectedCategory], item.categoryId)?.map((item: any) => <div key={item.name}>
 
                             <li 
                             onClick={()=>handleCategoryClick(item.categoryId)}
-                            className='hover:text-[#00927c] cursor-pointer'>
+                            className='hover:text-[#292966] cursor-pointer'>
                                 {item.name}
                             </li>
 

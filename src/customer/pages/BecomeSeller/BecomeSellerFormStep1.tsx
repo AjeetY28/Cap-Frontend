@@ -45,7 +45,7 @@ const BecomeSellerFormStep1 = ({ formik, handleOtpChange }: any) => {
                     />
                     <p className="text-xs space-x-2">
                         Didn’t receive OTP?{" "}
-                        <span onClick={handleResendOTP} className="text-teal-600 cursor-pointer hover:text-teal-800 font-semibold">
+                        <span onClick={handleResendOTP} className="text-[#292966]cursor-pointer hover:text-teal-800 font-semibold">
                             Resend OTP
                         </span>
                     </p>

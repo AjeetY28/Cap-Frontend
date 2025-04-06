@@ -59,7 +59,7 @@ const Profile = () => {
 
                     {menu.map((item, index) => <div
                         onClick={() => handleClick(item)}
-                        className={`${menu.length - 1 !== index ? "border-b" : ""} ${item.path == location.pathname ? "bg-primary-color text-white" : ""} px-5 py-3 rounded-md hover:bg-teal-500 hover:text-white cursor-pointer `}>
+                        className={`${menu.length - 1 !== index ? "border-b" : ""} ${item.path == location.pathname ? "bg-primary-color text-white" : ""} px-5 py-3 rounded-md hover:bg-[#006A67] hover:text-white cursor-pointer `}>
                         <p>{item.name}</p>
                     </div>)}
 

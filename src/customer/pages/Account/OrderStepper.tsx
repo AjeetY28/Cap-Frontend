@@ -45,7 +45,7 @@ const OrderStepper = ({ orderStatus }: any) => {
                             <Box
                                 sx={{ zIndex: -1 }}
                                 className={` w-8 h-8 rounded-full flex items-center justify-center z-10 ${index <= currentStep
-                                        ? " bg-gray-200 text-teal-500"
+                                        ? " bg-gray-200 text-[#292966]"
                                         : "bg-gray-300 text-gray-600"
                                     }  `}
                             >

@@ -75,7 +75,7 @@ const Products = () => {
     <div className="-z-10 mt-10">
       <div className="">
        
-        <h1 className="text-3xl text-center font-bold text-gray-700 pb-5 px-9 uppercase space-x-2">
+        <h1 className="text-3xl text-center font-bold text-[#292966] pb-5 px-9 uppercase space-x-2">
           {categoryId?.split("_").map((item) => (
             <span>{item}</span>
           ))}

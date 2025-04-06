@@ -82,7 +82,7 @@ const Cart = () => {
                 <div className="">
                   <div className="flex gap-3 text-sm items-center">
                     <LocalOfferIcon
-                      sx={{ color: teal[600], fontSize: "17px" }}
+                      sx={{ color: "#292966", fontSize: "17px" }}
                     />
                     <span>Apply Coupens</span>
                   </div>
@@ -135,7 +135,7 @@ const Cart = () => {
 
               <div className="border rounded-md px-5 py-4 flex justify-between items-center cursor-pointer">
                 <span>Add From Whishlist</span>
-                <FavoriteIcon sx={{ color: teal[600], fontSize: "21px" }} />
+                <FavoriteIcon sx={{ color: "#292966", fontSize: "21px" }} />
               </div>
             </div>
           </div>

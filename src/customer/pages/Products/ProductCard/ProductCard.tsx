@@ -118,14 +118,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ item }) => {
                                         onClick={handleAddWishlist}
                                     >
                                         {isWishlisted(wishlist.wishlist, item) ? (
-                                            <FavoriteIcon sx={{ color: teal[500] }} />
+                                            <FavoriteIcon sx={{ color: "#5c5c99" }} />
                                         ) : (
-                                            <FavoriteBorderIcon sx={{ color: "gray" }} />
+                                            <FavoriteBorderIcon sx={{ color: "#292966" }} />
                                         )}
                                     </Button>
                                 )}
                                 <Button onClick={handleShowChatBot} color="secondary" variant="contained">
-                                    <ModeCommentIcon sx={{ color: teal[500] }} />
+                                    <ModeCommentIcon sx={{ color: "#292966" }} />
                                 </Button>
                             </div>
 
@@ -148,7 +148,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ item }) => {
                         <span className="text thin-line-through text-gray-400 ">
                             ₹{item.mrpPrice}
                         </span>
-                        <span className="text-[#00927c] font-semibold">
+                        <span className="text-[#292966] font-semibold">
                             {item.discountPercent}% off
                         </span>
                     </div>
