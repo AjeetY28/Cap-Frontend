@@ -15,7 +15,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { isWishlisted } from "../../../../util/isWishlisted";
 import ModeCommentIcon from '@mui/icons-material/ModeComment';
 import ChatBot from "../../ChatBot/ChatBot";
-
+import StraightenIcon from '@mui/icons-material/Straighten'; 
 interface ProductCardProps {
     // images: string[];
     // categoryId: string | undefined;
@@ -124,6 +124,20 @@ const ProductCard: React.FC<ProductCardProps> = ({ item }) => {
                                         )}
                                     </Button>
                                 )}
+
+                                {/* New Button */}
+
+<Button
+    variant="contained"
+    color="secondary"
+    sx={{ zIndex: 10 }}
+    className="z-50"
+    onClick={() => console.log("Size Button Clicked")}
+>
+    <StraightenIcon sx={{ color: "#292966" }} />
+</Button>
+
+
                                 <Button onClick={handleShowChatBot} color="secondary" variant="contained">
                                     <ModeCommentIcon sx={{ color: "#292966" }} />
                                 </Button>
